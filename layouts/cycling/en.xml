@@ -5,6 +5,7 @@
             <button type="picture" icon="logo_camera"/>
             <button type="textnote" icon="logo_textnote"/>
             <button type="page" label="page 2" targetlayout="page2"/>
+            <button type="page" label="page 3" targetlayout="page3"/>
         </row>
         <row> <!-- tracktype tags (tracktype1=paved/asphalt, so not needed here) -->
             <button type="tag" label="track 2" />
@@ -22,21 +23,22 @@
             <button type="tag" label="intermediate" />
             <button type="tag" label="good" />
             <button type="tag" label="bad" />
-            <button type="tag" label="very_bad" />
+            <button type="tag" label="very bad" />
+        </row>
         <row> <!-- maxspeed, common values without icons -->
             <button type="tag" label="Speed 30" /> 
             <button type="tag" label="Speed 50" /> 
             <button type="tag" label="Speed 60" /> 
             <button type="tag" label="Speed 80" /> 
         </row>
-        </row>
     </layout>
     <layout name="page2">
         <row> <!-- cycling POI -->
-            <button type="tag" label="drinking_water" />
-            <button type="tag" label="bike_parking" />
-            <button type="tag" label="bicycle_repair_station" />
-            <button type="tag" label="bike_pump" />
+            <button type="page" label="page 1" targetlayout="root"/>
+            <button type="tag" label="drinking water" />
+            <button type="tag" label="bike parking" />
+            <button type="tag" label="bicycle repair station" />
+            <button type="page" label="page 3" targetlayout="page3"/>
         </row>
         <row> <!-- obstacles -->
             <button type="tag" label="bollard" />
@@ -55,16 +57,17 @@
             <button type="tag" label="missing road" />
             <button type="tag" label="no entrance oneway" />
             <button type="page" label="back" targetlayout="root"/>
-            <button type="page" label="page3" targetlayout="page3"/>
         </row>
     </layout>
         <layout name="page3">
         <row> <!-- maxspeed row 1 -->
+            <button type="page" label="page 1" targetlayout="root"/>
             <button type="tag" label="Maxspeed 30" icon="maxspeed_icons/30.png"/>
             <button type="tag" label="Maxspeed 40" icon="maxspeed_icons/40.png"/>
-            <button type="tag" label="Maxspeed 50" icon="maxspeed_icons/50.png"/>
+            <button type="page" label="page 2" targetlayout="page2"/>
         </row>
         <row> <!-- maxspeed row 2 -->
+            <button type="tag" label="Maxspeed 50" icon="maxspeed_icons/50.png"/>
             <button type="tag" label="Maxspeed 60" icon="maxspeed_icons/60.png"/>
             <button type="tag" label="Maxspeed 70" icon="maxspeed_icons/70.png"/>
             <button type="tag" label="Maxspeed 80" icon="maxspeed_icons/80.png"/>
@@ -74,10 +77,6 @@
             <button type="tag" label="Maxspeed 100" icon="maxspeed_icons/100.png"/>
             <button type="tag" label="Maxspeed 110" icon="maxspeed_icons/110.png"/>
             <button type="tag" label="Maxspeed 120" icon="maxspeed_icons/120.png"/>
-        </row>
-        <row> <!-- navigation-->
-            <button type="page" label="page 1" targetlayout="root"/>
-            <button type="page" label="page 2" targetlayout="page2"/>
         </row>
     </layout>
 </layouts>

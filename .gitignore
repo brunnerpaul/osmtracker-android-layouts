@@ -1,2 +1,4 @@
-*.xml~
-*.md~
+
+layouts/.DS_Store
+
+layouts/cycling/.DS_Store

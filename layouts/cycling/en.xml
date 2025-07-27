@@ -6,7 +6,7 @@
             <button type="textnote" icon="logo_textnote"/>
             <button type="page" label="next page" targetlayout="page2"/>
         </row>
-        <row> <!-- tracktype tags (tracktype1=paved/asphalt, so not needed here) -->
+        <row> <!-- tracktype tags (tracktype=grade1 = surface=paved/asphalt, so not needed here) -->
             <button type="tag" label="track 2" />
             <button type="tag" label="track 3" />
             <button type="tag" label="track 4" />
@@ -24,7 +24,7 @@
             <button type="tag" label="bad" />
             <button type="tag" label="very bad" />
         </row>
-        <row> <!-- maxspeed, common values without icons -->
+        <row> <!-- maxspeed, common values with icons, "Speed" instead of "Maxspeed" for smaller button size -->
             <button type="tag" label="Speed 30" icon="cycling_icons/30.png"/>
             <button type="tag" label="Speed 50" icon="cycling_icons/50.png"/>
             <button type="tag" label="Speed 60" icon="cycling_icons/60.png"/>
@@ -32,11 +32,23 @@
         </row>
     </layout>
     <layout name="page2">
-        <row> <!-- cycling POI -->
+        <row> <!-- drinking water ("well") -->
             <button type="tag" label="well left" />
             <button type="tag" label="well right" />
-            <button type="tag" label="well not drinkable" />
+            <button type="tag" label="well, not drinkable" />
             <button type="page" label="next page" targetlayout="page3"/>
+        </row>
+        <row> <!-- bike parking -->
+            <button type="tag" label="bike parking left" />
+            <button type="tag" label="bike parking right" />
+            <button type="tag" label="covered" />
+            <button type="tag" label="not covered" />
+        </row>
+         <row> <!-- less common surface tags on the same row as page 1 -->
+            <button type="tag" label="grass" />
+            <button type="tag" label="wood" />
+            <button type="tag" label="paving stones" />
+            <button type="tag" label="sett" />
         </row>
         <row> <!-- obstacles -->
             <button type="tag" label="bollard" />
@@ -44,17 +56,11 @@
             <button type="tag" label="steps" />
             <button type="tag" label="closed gate" />
         </row>
-        <row> <!-- less common surface tags -->
-            <button type="tag" label="grass" />
-            <button type="tag" label="wood" />
-            <button type="tag" label="paving stones" />
-            <button type="tag" label="sett" />
-        </row>
-        <row> <!-- incorrect/incomplete OSM data and navigation-->
+        <row> <!-- incorrect/incomplete OSM data -->
             <button type="tag" label="oneway, no entry" />
             <button type="tag" label="private road" />
             <button type="tag" label="missing road" />
-            <button type="tag" label="bike parking" />
+            <button type="tag" label="pump" />
         </row>
     </layout>
         <layout name="page3">
@@ -62,7 +68,7 @@
             <button type="tag" label="Maxspeed 20" icon="cycling_icons/20.png"/>
             <button type="tag" label="Maxspeed 30" icon="cycling_icons/30.png"/>
             <button type="tag" label="Maxspeed 40" icon="cycling_icons/40.png"/>
-            <button type="page" label="next page" targetlayout="root"/>
+            <button type="page" label="first page" targetlayout="root"/>
         </row>
         <row> <!-- maxspeed row 2 -->
             <button type="tag" label="Maxspeed 50" icon="cycling_icons/50.png"/>

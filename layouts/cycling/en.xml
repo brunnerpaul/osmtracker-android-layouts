@@ -25,10 +25,10 @@
             <button type="tag" label="very bad" />
         </row>
         <row> <!-- maxspeed, common values without icons -->
-            <button type="tag" label="Maxspeed 30" icon="cycling_icons/30.png"/>
-            <button type="tag" label="Maxspeed 50" icon="cycling_icons/50.png"/>
-            <button type="tag" label="Maxspeed 60" icon="cycling_icons/60.png"/>
-            <button type="tag" label="Maxspeed 80" icon="cycling_icons/80.png"/>
+            <button type="tag" label="Speed 30" icon="cycling_icons/30.png"/>
+            <button type="tag" label="Speed 50" icon="cycling_icons/50.png"/>
+            <button type="tag" label="Speed 60" icon="cycling_icons/60.png"/>
+            <button type="tag" label="Speed 80" icon="cycling_icons/80.png"/>
         </row>
     </layout>
     <layout name="page2">
@@ -59,12 +59,13 @@
     </layout>
         <layout name="page3">
         <row> <!-- maxspeed row 1 -->
+            <button type="tag" label="Maxspeed 20" icon="cycling_icons/20.png"/>
             <button type="tag" label="Maxspeed 30" icon="cycling_icons/30.png"/>
             <button type="tag" label="Maxspeed 40" icon="cycling_icons/40.png"/>
-            <button type="tag" label="Maxspeed 50" icon="cycling_icons/50.png"/>
-            <button type="page" label="next page" targetlayout="page1"/>
+            <button type="page" label="next page" targetlayout="root"/>
         </row>
         <row> <!-- maxspeed row 2 -->
+            <button type="tag" label="Maxspeed 50" icon="cycling_icons/50.png"/>
             <button type="tag" label="Maxspeed 60" icon="cycling_icons/60.png"/>
             <button type="tag" label="Maxspeed 70" icon="cycling_icons/70.png"/>
             <button type="tag" label="Maxspeed 80" icon="cycling_icons/80.png"/>

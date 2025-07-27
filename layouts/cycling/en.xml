@@ -1,0 +1,77 @@
+<layouts>
+    <layout name="root">
+        <row> <!-- audio/picture/text notes and navigation -->
+            <button type="voicerec" icon="logo_voice"/>
+            <button type="picture" icon="logo_camera"/>
+            <button type="textnote" icon="logo_textnote"/>
+            <button type="page" label="other" targetlayout="other"/>
+        </row>
+        <row> <!-- tracktype tags (tracktype1=paved/asphalt, so not needed here) -->
+            <button type="tag" label="track 2" icon="cycling_icons/track_2.png" />
+            <button type="tag" label="track 3" icon="cycling_icons/track_3.png"/>
+            <button type="tag" label="track 4" icon="cycling_icons/track_4.png"/>
+            <button type="tag" label="track 5" icon="cycling_icons/track_5.png"/>
+        </row>
+        <row> <!-- surface tags, the most common for off-road cycling first -->
+            <button type="tag" label="compacted" icon="cycling_icons/compacted.png" />
+            <button type="tag" label="ground" icon="cycling_icons/ground.png" />
+            <button type="tag" label="asphalt" icon="cycling_icons/asphalt.png" />
+            <button type="tag" label="concrete" icon="cycling_icons/concrete.png" />
+        </row>
+        <row> <!-- smoothness tags, the most common for off-road cycling first -->
+            <button type="tag" label="intermediate" icon="cycling_icons/intermediate.png" />
+            <button type="tag" label="good" icon="cycling_icons/good.png"/>
+            <button type="tag" label="bad" icon="cycling_icons/bad.png"/>
+            <button type="tag" label="very_bad" icon="cycling_icons/very_bad.png"/>
+        </row>
+    </layout>
+    <layout name="page2">
+        <row> <!-- cycling POI -->
+            <button type="tag" label="drinking_water" icon="cycling_icons/drinking_water.png"/>
+            <button type="tag" label="bike_parking" icon="cycling_icons/bike_parking.png"/>
+            <button type="tag" label="bicycle_repair_station" icon="cycling_icons/bicycle_repair_station.png"/>
+            <button type="tag" label="bike_pump" icon="cycling_icons/bike_pump.png"/>
+        </row>
+        <row> <!-- obstacles -->
+            <button type="tag" label="bollard" icon="cycling_icons/bollard.png"/>
+            <button type="tag" label="cyclist's gate" icon="cycling_icons/cyclists_gate.png"/>
+            <button type="tag" label="steps" icon="cycling_icons/steps.png"/>
+            <button type="tag" label="closed gate" icon="cycling_icons/closed_gate.png"/>
+        </row>
+        <row> <!-- less common surface tags -->
+            <button type="tag" label="grass" icon="cycling_icons/grass.png" />
+            <button type="tag" label="wood" icon="cycling_icons/wood.png" />
+            <button type="tag" label="paving stones" icon="cycling_icons/paving_stones.png" />
+            <button type="tag" label="sett" icon="cycling_icons/sett.png" />
+        </row>
+        <row> <!-- incorrect/incomplete OSM data and navigation-->
+            <button type="tag" label="private road" icon="cycling_icons/private_road.png" />
+            <button type="tag" label="missing road" icon="cycling_icons/missing_road.png" />
+            <button type="tag" label="no entrance oneway" icon="cycling_icons/no_entrance_oneway.png" />
+            <button type="page" label="back" targetlayout="root"/>
+            <button type="page" label="maxspeed" targetlayout="maxspeed"/>
+        </row>
+    </layout>
+        <layout name="maxspeed">
+        <row> <!-- maxspeed row 1 -->
+            <button type="tag" label="Maxspeed 30" icon="maxspeed_icons/30.png"/>
+            <button type="tag" label="Maxspeed 40" icon="maxspeed_icons/40.png"/>
+            <button type="tag" label="Maxspeed 50" icon="maxspeed_icons/50.png"/>
+        </row>
+        <row> <!-- maxspeed row 2 -->
+            <button type="tag" label="Maxspeed 60" icon="maxspeed_icons/60.png"/>
+            <button type="tag" label="Maxspeed 70" icon="maxspeed_icons/70.png"/>
+            <button type="tag" label="Maxspeed 80" icon="maxspeed_icons/80.png"/>
+        </row>
+        <row> <!-- maxspeed row 3 -->
+            <button type="tag" label="Maxspeed 90" icon="maxspeed_icons/90.png"/>
+            <button type="tag" label="Maxspeed 100" icon="maxspeed_icons/100.png"/>
+            <button type="tag" label="Maxspeed 110" icon="maxspeed_icons/110.png"/>
+            <button type="tag" label="Maxspeed 120" icon="maxspeed_icons/120.png"/>
+        </row>
+        <row> <!-- navigation-->
+            <button type="page" label="to page 1" targetlayout="root"/>
+            <button type="page" label="to page 2" targetlayout="page2"/>
+        </row>
+    </layout>
+</layouts>

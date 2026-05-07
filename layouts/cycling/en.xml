@@ -27,10 +27,10 @@
             <button type="page" label="next page" targetlayout="page3" />
         </row>
         <row> <!-- maxspeed row 1 -->
-            <button type="tag" label="20 km/h" icon="cycling_3_rows_icons/20.png" />
-            <button type="tag" label="30 km/h" icon="cycling_3_rows_icons/30.png" />
-            <button type="tag" label="40 km/h" icon="cycling_3_rows_icons/40.png" />
-            <button type="tag" label="50 km/h" icon="cycling_3_rows_icons/50.png" />
+            <button type="tag" label="20 km/h" />
+            <button type="tag" label="30 km/h" />
+            <button type="tag" label="40 km/h" />
+            <button type="tag" label="50 km/h" />
         </row>
         <row> <!-- maxspeed row 2 -->
             <button type="tag" label="60 km/h" /> <!--  icons disabled for less common values to save space, icon="cycling_3_rows_icons/60.png" -->

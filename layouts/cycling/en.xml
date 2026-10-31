@@ -42,16 +42,16 @@
     </layout>
     <layout name="page3">
         <row> <!-- maxspeed row 1 -->
-            <button type="tag" label="30 km/h" icon="cycling_3_rows_icons/30.png" />
-            <button type="tag" label="40 km/h" icon="cycling_3_rows_icons/40.png" />
-            <button type="tag" label="50 km/h" icon="cycling_3_rows_icons/50.png" />
+            <button type="tag" label="30 km/h" icon="cycling_icons/30.png" />
+            <button type="tag" label="40 km/h" icon="cycling_icons/40.png" />
+            <button type="tag" label="50 km/h" icon="cycling_icons/50.png" />
             <button type="page" label="next page" targetlayout="page4" />
         </row>
         <row> <!-- maxspeed row 2 -->
-            <button type="tag" label="60 km/h" /> <!--  icons disabled for less common values to save space, icon="cycling_3_rows_icons/60.png" -->
-            <button type="tag" label="70 km/h" /> <!--  icon="cycling_3_rows_icons/70.png" -->
-            <button type="tag" label="80 km/h" /> <!--  icon="cycling_3_rows_icons/80.png" -->
-            <button type="tag" label="speed limit end" />
+            <button type="tag" label="60 km/h" /> <!--  icons disabled for less common values to save space, icon="cycling_icons/60.png" -->
+            <button type="tag" label="70 km/h" /> <!--  icon="cycling_icons/70.png" -->
+            <button type="tag" label="80 km/h" /> <!--  icon="cycling_icons/80.png" -->
+            <button type="tag" label="maxspeed end" />
         </row>
         <row> <!-- drinking_water (named "well" for layout purposes) -->
             <button type="tag" label="well left" />
@@ -76,8 +76,8 @@
         <row> <!-- signage regarding shared use with pedestrians -->
             <button type="tag" label="start foot/cycleway" />
             <button type="tag" label="start cycleway" />
-            <button type="tag" label="end foot/cycleway" />
             <button type="tag" label="end cycleway" />
+            <button type="tag" label="end foot/cycleway" />
         </row>
     </layout>
     <layout name="page5">
@@ -94,10 +94,10 @@
             <button type="tag" label="early release light" /> <!-- https://wiki.openstreetmap.org/wiki/Key:traffic_signals:bicycle_early_release -->
         </row>
         <row> <!-- rare tags for surface and smoothness -->
-            <button type="tag" label="concrete" />
             <button type="tag" label="paving stones" />
-            <button type="tag" label="wood" />
             <button type="tag" label="sett" /> 
+            <button type="tag" label="wood" />
+            <button type="tag" label="concrete" />
         </row>
     </layout>
     <layout name="page6">

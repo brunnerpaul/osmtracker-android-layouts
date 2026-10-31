@@ -23,7 +23,8 @@
          <row> <!-- less common surface values on the same row as page 1 -->
             <button type="page" label="first page" targetlayout="root" />
             <button type="tag" label="grass" />
-            <button type="tag" label="fine gravel, really" />
+            <button type="tag" label="fine gravel" />
+            <button type="tag" label="concrete" />
             <button type="page" label="next page" targetlayout="page3" />
         </row>
         <row> <!-- marking viewpoints and nice sections of a route -->
@@ -41,16 +42,16 @@
     </layout>
     <layout name="page3">
         <row> <!-- maxspeed row 1 -->
-            <button type="tag" label="30 km/h" icon="cycling_icons/30.png" />
-            <button type="tag" label="40 km/h" icon="cycling_icons/40.png" />
-            <button type="tag" label="50 km/h" icon="cycling_icons/50.png" />
+            <button type="tag" label="30 km/h" icon="cycling_3_rows_icons/30.png" />
+            <button type="tag" label="40 km/h" icon="cycling_3_rows_icons/40.png" />
+            <button type="tag" label="50 km/h" icon="cycling_3_rows_icons/50.png" />
             <button type="page" label="next page" targetlayout="page4" />
         </row>
         <row> <!-- maxspeed row 2 -->
-            <button type="tag" label="60 km/h" /> <!--  icons disabled for less common values to save space, icon="cycling_icons/60.png" -->
-            <button type="tag" label="70 km/h" /> <!--  icon="cycling_icons/70.png" -->
-            <button type="tag" label="80 km/h" /> <!--  icon="cycling_icons/80.png" -->
-            <button type="tag" label="maxspeed end" />
+            <button type="tag" label="60 km/h" /> <!--  icons disabled for less common values to save space, icon="cycling_3_rows_icons/60.png" -->
+            <button type="tag" label="70 km/h" /> <!--  icon="cycling_3_rows_icons/70.png" -->
+            <button type="tag" label="80 km/h" /> <!--  icon="cycling_3_rows_icons/80.png" -->
+            <button type="tag" label="speed limit end" />
         </row>
         <row> <!-- drinking_water (named "well" for layout purposes) -->
             <button type="tag" label="well left" />
@@ -88,13 +89,13 @@
         </row>
         <row> <!-- special cases of smoothness, signage or paint -->
             <button type="tag" label="excellent" />
-            <button type="tag" label="advanced stopping line" /> <!-- https://wiki.openstreetmap.org/wiki/Tag:cycleway%3Dasl -->
+            <button type="tag" label="advanced stop line" /> <!-- https://wiki.openstreetmap.org/wiki/Tag:cycleway%3Dasl -->
             <button type="tag" label="right on red" /> <!-- https://wiki.openstreetmap.org/wiki/Red_turn -->
             <button type="tag" label="early release light" /> <!-- https://wiki.openstreetmap.org/wiki/Key:traffic_signals:bicycle_early_release -->
         </row>
         <row> <!-- rare tags for surface and smoothness -->
             <button type="tag" label="concrete" />
-            <button type="tag" label="paving_stones" />
+            <button type="tag" label="paving stones" />
             <button type="tag" label="wood" />
             <button type="tag" label="sett" /> 
         </row>
@@ -108,7 +109,7 @@
         </row>
         <row> <!-- incorrect/incomplete OSM data -->
             <button type="tag" label="oneway w/ me" />
-            <button type="tag" label="oneway against me" />
+            <button type="tag" label="oneway ag. me" />
             <button type="tag" label="sauf velo" />
             <button type="tag" label="private, no entry" />
         </row>

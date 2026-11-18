@@ -1,0 +1,123 @@
+<layouts>
+    <layout name="root">
+        <row> <!-- surface, most common values for off-road cycling first -->
+            <button type="tag" label="compacted" />
+            <button type="tag" label="dirt" />
+            <button type="tag" label="asphalt" />
+            <button type="page" label="next page" targetlayout="page2" />
+        </row>
+        <row> <!-- tracktype (tracktype=grade1 = surface=paved/asphalt/concrete, so not needed here) -->
+            <button type="tag" label="track 2" />
+            <button type="tag" label="track 3" />
+            <button type="tag" label="track 4" />
+            <button type="tag" label="track 5" />
+        </row>
+        <row> <!-- smoothness -->
+            <button type="tag" label="good" icon="cycling_3_rows_icons/green_bar.png" />
+            <button type="tag" label="intermediate" icon="cycling_3_rows_icons/yellow_bar.png" />
+            <button type="tag" label="bad" icon="cycling_3_rows_icons/orange_bar.png" />
+            <button type="tag" label="very bad" icon="cycling_3_rows_icons/red_bar.png" />
+        </row>
+    </layout>
+    <layout name="page2">
+         <row> <!-- less common surface values on the same row as page 1 -->
+            <button type="tag" label="grass" />
+            <button type="tag" label="wood" />
+            <button type="tag" label="concrete" />
+            <button type="page" label="next page" targetlayout="page3" />
+        </row>
+        <row> <!-- marking viewpoints and nice sections of a route -->
+            <button type="tag" label="viewpoint" />
+            <button type="tag" label="start nice" />
+            <button type="tag" label="end nice" />
+            <button type="tag" label="3.4m" />
+        </row>
+        <row> <!-- width of path/track/road -->
+            <button type="tag" label="0.5m" />
+            <button type="tag" label="0.8m" />
+            <button type="tag" label="1.2m" />
+            <button type="tag" label="2.5m" />
+        </row>
+    </layout>
+    <layout name="page3">
+        <row> <!-- rare tags for surface on the same row as page 1 -->
+            <button type="page" label="1st page" targetlayout="root" />
+            <button type="tag" label="paving stones" />
+            <button type="tag" label="fine gravel" />
+            <button type="page" label="next page" targetlayout="page4" />
+        </row>
+        <row> <!-- maxspeed row 1 and photo button-->
+            <button type="tag" label="30 km/h" icon="cycling_3_rows_icons/30.png" />
+            <button type="tag" label="40 km/h" icon="cycling_3_rows_icons/40.png" />
+            <button type="tag" label="50 km/h" icon="cycling_3_rows_icons/50.png" />
+            <button type="picture" icon="logo_camera" /> <!-- make photo button more easily accessible (app returns to root page after taking photo) -->
+        </row>
+        <row> <!-- maxspeed row 2 -->
+            <button type="tag" label="60 km/h" /> <!-- icons disabled for less common values to save space, icon="cycling_3_rows_icons/60.png" -->
+            <button type="tag" label="70 km/h" /> <!-- icon="cycling_3_rows_icons/70.png" -->
+            <button type="tag" label="80 km/h" /> <!-- icon="cycling_3_rows_icons/80.png" -->
+            <button type="tag" label="maxspeed end" />
+        </row>
+    </layout>
+    <layout name="page4">
+        <row> <!-- audio/text notes -->
+            <button type="page" label="1st page" targetlayout="root" />
+            <button type="voicerec" icon="logo_voice" />
+            <button type="textnote" icon="logo_textnote" />
+            <button type="page" label="next page" targetlayout="page5" />
+        </row>
+        <row> <!-- painted bike lanes -->
+            <button type="tag" label="start bike lane" />
+            <button type="tag" label="left only" />
+            <button type="tag" label="right only" />
+            <button type="tag" label="end bike lane" />
+        </row>
+        <row> <!-- signage regarding shared use with pedestrians -->
+            <button type="tag" label="start foot/cycleway" />
+            <button type="tag" label="start cycleway" />
+            <button type="tag" label="end foot/cycleway" />
+            <button type="tag" label="end cycleway" />
+        </row>
+    </layout>
+    <layout name="page5">
+        <row> <!--motor_vehicle access values-->
+            <button type="tag" label="forestry mv" />
+            <button type="tag" label="agricultural mv" />
+            <button type="tag" label="no motor vehicle" />
+            <button type="page" label="next page" targetlayout="page6" />
+        </row>
+        <row> <!-- special cases of smoothness, signage or paint -->
+            <button type="tag" label="excellent" />
+            <button type="tag" label="advanced stopping line" /> <!-- https://wiki.openstreetmap.org/wiki/Tag:cycleway%3Dasl -->
+            <button type="tag" label="right on red" /> <!-- https://wiki.openstreetmap.org/wiki/Red_turn -->
+            <button type="tag" label="early release light" /> <!-- https://wiki.openstreetmap.org/wiki/Key:traffic_signals:bicycle_early_release -->
+        </row>
+        <row> <!-- drinking_water (named "well" for layout purposes) -->
+            <button type="tag" label="well left" />
+            <button type="tag" label="well right" />
+            <button type="tag" label="wheelchair yes" />
+            <button type="tag" label="well, not drinkable" />
+        </row>
+    </layout>
+    <layout name="page6">
+        <row> <!-- various obstacles -->
+            <button type="tag" label="bollard" />
+            <button type="tag" label="cycling gate" />
+            <button type="tag" label="closed gate" />
+            <button type="page" label="1st page" targetlayout="root" />
+        </row>
+        <row> <!-- incorrect/incomplete OSM data -->
+            <button type="tag" label="oneway w/ me" />
+            <button type="tag" label="oneway against me" />
+            <button type="tag" label="exc. bike" />
+            <button type="tag" label="private, no entry" />
+        </row>
+        <row> <!-- incorrect/incomplete OSM data -->
+            <button type="tag" label="bench left" />
+            <button type="tag" label="bench right" />
+            <button type="tag" label="steps down" />
+            <button type="tag" label="steps up" />
+            <button type="tag" label="bump" />
+        </row>
+    </layout>
+</layouts>

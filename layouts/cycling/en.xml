@@ -13,10 +13,10 @@
             <button type="tag" label="track 5" />
         </row>
         <row> <!-- smoothness -->
-            <button type="tag" label="good" icon="cycling_3_rows_icons/green_bar.png" />
-            <button type="tag" label="intermediate" icon="cycling_3_rows_icons/yellow_bar.png" />
-            <button type="tag" label="bad" icon="cycling_3_rows_icons/orange_bar.png" />
-            <button type="tag" label="very bad" icon="cycling_3_rows_icons/red_bar.png" />
+            <button type="tag" label="good" icon="cycling_3_rows_icons/green.png" />
+            <button type="tag" label="intermediate" icon="cycling_3_rows_icons/yellow.png" />
+            <button type="tag" label="bad" icon="cycling_3_rows_icons/orange.png" />
+            <button type="tag" label="very bad" icon="cycling_3_rows_icons/red.png" />
         </row>
     </layout>
     <layout name="page2">
